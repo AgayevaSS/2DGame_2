@@ -8,6 +8,7 @@ public class PlayerMove : MonoBehaviour
     public float jumpForce = 5f; // Сила прыжка
     private bool isJumping = false;
     private Rigidbody2D rb;
+    [SerializeField] public int fireCount;
 
     private void Start()
     {
@@ -36,4 +37,5 @@ public class PlayerMove : MonoBehaviour
             isJumping = false;
         }
     }
+   
 }
